@@ -47,3 +47,15 @@ print(newdataform)
 latest_data=newdataform[newdataform["Date"] > "2020-09-23"]
 
 print(latest_data)
+
+df_row=pd.concat([dailydata, newdataform])
+
+print(df_row)
+
+df_row_reindex = pd.concat([dailydata, newdataform], ignore_index=True)
+
+print(df_row_reindex)
+
+print(df_row_reindex.sort_values("Date"))
+
+print(df_row_reindex.drop_duplicates(subset=['Date']))
