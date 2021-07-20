@@ -11,3 +11,9 @@ api_data=data.json()
 print(type(api_data))
 
 print(api_data)
+
+dailydata=pd.read_csv("AMZN.csv")
+
+print(dailydata)
+
+print(type("dailydata"))
