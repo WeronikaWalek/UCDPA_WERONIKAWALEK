@@ -39,3 +39,7 @@ print(dailydata.isnull())
 print(dailydata.isna())
 
 print(dailydata.isna().sum())
+
+newdataform=pd.read_csv("AMZN new.csv")
+
+print(newdataform)
