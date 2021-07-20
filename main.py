@@ -59,3 +59,17 @@ print(df_row_reindex)
 print(df_row_reindex.sort_values("Date"))
 
 print(df_row_reindex.drop_duplicates(subset=['Date']))
+
+newdata_list=df_row_reindex.values.tolist()
+
+print(newdata_list)
+
+print(df_row_reindex[["Date", "Open"]])
+
+data_wo_dup=df_row_reindex.drop_duplicates(subset=['Date'])
+
+print(data_wo_dup)
+
+date_and_open=data_wo_dup[["Date", "Open"]]
+
+print(date_and_open)
