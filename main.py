@@ -145,3 +145,7 @@ print(type(year))
 yearlist=year.values.tolist()
 
 print(yearlist)
+
+plt.plot(only_open_list, yearlist)
+
+plt.show()
