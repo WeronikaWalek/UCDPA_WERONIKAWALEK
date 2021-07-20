@@ -125,3 +125,12 @@ print(np.mean(open_array))
 print(type(only_open_list))
 
 print(type(only_date_list))
+
+import matplotlib.pyplot as plt
+
+plt.hist(x=date_and_open["Open"], bins=500, label='Amazon Opening Price $')
+
+plt.legend()
+
+plt.show()
+
