@@ -146,6 +146,12 @@ yearlist=year.values.tolist()
 
 print(yearlist)
 
-plt.plot(only_open_list, yearlist)
+plt.scatter(x = only_open_list, y = yearlist, color = 'green')
+
+plt.xlabel('Opening Price $')
+
+plt.ylabel('Year')
+
+plt.title('Amazon Opening Price Development 1997-2021')
 
 plt.show()
