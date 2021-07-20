@@ -73,3 +73,41 @@ print(data_wo_dup)
 date_and_open=data_wo_dup[["Date", "Open"]]
 
 print(date_and_open)
+
+date_and_open_list=date_and_open.values.tolist()
+
+print(date_and_open_list)
+
+print(max(date_and_open_list))
+
+print(min(date_and_open_list))
+
+only_open=data_wo_dup[["Open"]]
+
+print(only_open)
+
+only_open_list=only_open.values.tolist()
+
+print(only_open_list)
+
+print(min(only_open_list))
+
+print(max(only_open_list))
+
+max_open=(max(only_open_list))
+
+print(max_open)
+
+open_string=str(max_open)
+
+print(type(open_string))
+
+print('The highest opening prices of Amazons stock was $' + open_string + '.')
+
+only_date=data_wo_dup[["Date"]]
+
+print(only_date)
+
+only_date_list=only_date.values.tolist()
+
+print(only_date_list)
