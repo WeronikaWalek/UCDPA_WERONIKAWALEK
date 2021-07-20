@@ -29,3 +29,13 @@ print(dailydata.columns)
 print(dailydata.sort_values("Volume"))
 
 print(dailydata.sort_values("Volume" , ascending=False))
+
+print(dailydata.duplicated())
+
+print(dailydata.duplicated(subset=["Volume"]))
+
+print(dailydata.isnull())
+
+print(dailydata.isna())
+
+print(dailydata.isna().sum())
