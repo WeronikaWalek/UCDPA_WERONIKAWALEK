@@ -43,3 +43,7 @@ print(dailydata.isna().sum())
 newdataform=pd.read_csv("AMZN new.csv")
 
 print(newdataform)
+
+latest_data=newdataform[newdataform["Date"] > "2020-09-23"]
+
+print(latest_data)
