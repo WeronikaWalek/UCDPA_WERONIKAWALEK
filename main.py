@@ -134,3 +134,14 @@ plt.legend()
 
 plt.show()
 
+import datetime
+
+year=pd.DatetimeIndex(date_and_open["Date"]).year
+
+print(year)
+
+print(type(year))
+
+yearlist=year.values.tolist()
+
+print(yearlist)
