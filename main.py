@@ -111,3 +111,17 @@ print(only_date)
 only_date_list=only_date.values.tolist()
 
 print(only_date_list)
+
+date_and_open_array=np.array([only_date_list, only_open_list])
+
+print(date_and_open_array)
+
+open_array=np.array([only_open_list])
+
+print(open_array)
+
+print(np.mean(open_array))
+
+print(type(only_open_list))
+
+print(type(only_date_list))
