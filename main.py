@@ -17,3 +17,15 @@ dailydata=pd.read_csv("AMZN.csv")
 print(dailydata)
 
 print(type("dailydata"))
+
+dailydata.head()
+
+dailydata.info()
+
+dailydata.sort_values("Volume")
+
+print(dailydata.columns)
+
+print(dailydata.sort_values("Volume"))
+
+print(dailydata.sort_values("Volume" , ascending=False))
